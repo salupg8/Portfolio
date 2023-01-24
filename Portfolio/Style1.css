@@ -1,0 +1,360 @@
+﻿*{
+    margin:0;
+    padding:0;
+    font-family:sans-seriff;
+}
+
+
+.banner{
+    width:100%;
+    height:100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(3.jpg);
+    background-size:cover;
+    background-position:center;
+}
+
+.navbar{
+    width:85%;
+    margin:auto;
+    padding:35px 0;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo{
+    width:60px;
+    cursor:pointer;
+}
+
+.navbar ul li{
+    list-style:none;
+    display:inline-block;
+    margin:0 20px;
+    position:relative;
+}
+.navbar ul li a{
+    text-decoration:none;
+    color:#fff;
+    text-transform:uppercase;
+}
+.navbar ul li::after{
+    content:'';
+    height:3px;
+    width:0%;
+    background:#009688;
+    position:absolute;
+    left:0;
+    bottom:-10px;
+    transition:0.5s;
+
+}
+    .navbar ul li:hover::after {
+        width:100%;
+
+    }
+
+    .content{
+        width:100%;
+        position:absolute;
+        top:50%;
+        transform:translateY(-50%);
+        text-align:center;
+        color:#fff;
+
+    }
+    .content h1{
+        font-size:70px;
+        margin-top:80px;
+    }
+
+    .content p{margin:20px auto;
+font-weight:100;
+line-height:25px;
+
+    }
+    button{
+        width:200px;
+        padding:15px 0;
+        text-align:center;
+        margin:20px 10px;
+        border-radius:25px;
+        font-weight:bold;
+        border:2px solid #009688;
+        background:transparent;
+        color:#fff;
+        cursor:pointer;
+        position:relative;
+        overflow:hidden;
+
+    }
+
+    span{
+        background:#009688;
+        height:100%;
+        width:0%;
+        border-radius:25px;
+        position:absolute;
+        left:0;
+        bottom:0;
+        z-index:-1;
+        transition:0.5s;
+    }
+    button:hover span{width:100%;
+
+    }
+    button:hover{
+        border:none;
+    }
+
+
+*{
+    box-sizing: border-box;
+}
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+   
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+    display:none;
+    position:fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+}
+
+    /* Full-width textarea */
+    .form-container textarea {
+        width: 100%;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        border: none;
+        background: #f1f1f1;
+        resize: none;
+        min-height: 200px;
+    }
+
+        /* When the textarea gets focus, do something */
+        .form-container textarea:focus {
+            background-color: #ddd;
+            outline: none;
+        }
+
+    /* Set a style for the submit/login button */
+    .form-container .btn {
+        background-color: #04AA6D;
+        color: white;
+        padding: 16px 20px;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        margin-bottom: 10px;
+        opacity: 0.8;
+    }
+
+    /* Add a red background color to the cancel button */
+    .form-container .cancel {
+        background-color: red;
+    }
+
+    /* Add some hover effects to buttons */
+    .form-container .btn:hover, .open-button:hover {
+        opacity: 1;
+    }
+
+    /*About section*/
+.imageAboutPage {
+    width: 400px;
+    clip-path: circle();
+    opacity: 0.5;
+    transition: 1s ease;
+}
+
+    .imageAboutPage:hover {
+        opacity: 1;
+        transition: 1s ease;
+    }
+.text-center {
+    width: 50%;
+    position: absolute;
+    top: 40%;
+    left: 30% ;
+    text-align: center;
+    color: #fff;
+}
+.col-lg-8 {
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    text-align: center;
+    color: #fff;
+}
+
+.col-md-6 ul li {
+    list-style-type: none;
+}
+
+/*Services page*/
+h1{
+    text-align:center;
+    margin:50px auto 120px !important;
+    color:#fff;
+}
+.main {
+    width: 100px;
+    min-height: 380px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+   }
+.service {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    box-shadow: 0 0 20px -15px #030380;
+    transition: transform .8s;
+}
+.service-logo{
+    width:130px;height:130px;
+    border-radius:50%;
+    margin:-90px auto 0;
+    background:#fff;
+    border:18px solid #007bff;
+}
+.service-logo img{width:50px;
+                  margin-top:20px;
+transition:transform 1s;
+}
+
+.service h4{
+    height:35px;
+    width:80%;
+    background:#fff;
+    margin:50px auto;
+    position:relative;
+
+}
+.service h4::after{
+    content:'';
+    width:40px;
+    height:30px;
+    background:linear-gradient(to right,#fff,#007bff );
+    position:absolute;
+    right:-5px;
+    top:-5px;
+    z-index:-1;
+}
+.service h4::before {
+    content: '';
+    width: 40px;
+    height: 30px;
+    background: linear-gradient(to right,#007bff,#fff);
+    position: absolute;
+    left: -5px;
+    bottom: -5px;
+    z-index: -1;
+}
+.shadowone{height:200px;
+           width:80%;
+           background:#fff;
+           position:absolute;
+           border-radius:10px;
+           bottom:0;
+           left:10%;
+           z-index:-1;
+           box-shadow:0 0 20px -15px #030380;
+           transition:transform .8s;
+}
+.shadowtwo {
+    height: 200px;
+    width: 64%;
+    background: #fff;
+    position: absolute;
+    border-radius: 10px;
+    bottom: 0;
+    left: 18%;
+    z-index: -2;
+}
+.main:hover .service{
+    transform:translateY(-50px);
+}
+.main:hover .shadowone {
+    transform: translateY(-25px);
+}
+.main:hover img {
+    transform: rotate(360deg);
+}
+
+
+
+
+
+
+/* *{ transform: translateY(-50%);
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+body {background-image:url(3.jpg);
+     background-size:cover;
+     background-position:center center ;
+     height:100vh;
+     font-family:poppins;
+     font-weight:600;
+     font-size:16px;
+
+}
+a{text-decoration:none;}
+header{
+    display:-webkit-flex;
+    display:-moz-flex;
+    display:-ms-flex;
+    display:-o-flex;
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    padding:30px 70px;
+
+}
+
+.logo {
+    margin-right: auto;
+}
+
+.nav-area{list-style:none;}
+
+.nav-area li{display:inline-block;
+             padding:0 15px;
+}
+.nav-area li a{color:#fff;
+               text-transform:uppercase;
+}
+.nav-area li a:hover{
+    color:#d22938;
+        }
+    */
